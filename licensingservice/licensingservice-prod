@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: 124563
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sca?useSSL=false
+    username: root
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: create
+server:
+  port: 8081
+
+name: prod
