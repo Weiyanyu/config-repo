@@ -12,4 +12,4 @@ spring:
 server:
   port: 8081
 
-name: dev-change-2
+name: dev-change-3
