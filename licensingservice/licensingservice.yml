@@ -9,7 +9,5 @@ spring:
     database: mysql
     hibernate:
       ddl-auto: create
-server:
-  port: 8081
 
 name: default
