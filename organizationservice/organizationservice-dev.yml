@@ -3,6 +3,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: '{cipher}233bd907c35a418801278bd2da2d76e1eb2483d50e9b147a576ee7c537e96017e449eb3b48dac16418855c32f91e2ef8'
       
 name: dev
