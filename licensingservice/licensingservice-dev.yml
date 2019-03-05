@@ -17,6 +17,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: '{cipher}233bd907c35a418801278bd2da2d76e1eb2483d50e9b147a576ee7c537e96017e449eb3b48dac16418855c32f91e2ef8'
+      defaultZone: '{cipher}809e65ad2b0efa4c5e35cdf17ceaca4189ccb185be82e4fdf21378f166dbdf07e6f55b3a722390fa185270d9d713a8126c4dd495d1eaf4493c3f0ae21b52a4171d817d0a71ad204f146e11e61479fe1a'
 
 name: dev-change-3
