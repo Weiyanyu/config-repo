@@ -10,8 +10,8 @@ eureka:
 zuul:
   routes:
     licensingservice: /licensing/**
-    organizationservice: /organization/**
+    # organizationservice: /organization/**
   ignored-services: '*'
-  prefix: /api    
+  prefix: /api
 
 name: dev
