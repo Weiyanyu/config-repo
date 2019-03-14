@@ -3,7 +3,7 @@ spring:
     password: 124563
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://172.17.197.203:3306/sca?useSSL=false
-    username: root
+    username: yeonon
   jpa:
     show-sql: true
     database: mysql
