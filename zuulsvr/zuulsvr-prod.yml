@@ -3,7 +3,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: '{cipher}418b0e70e93b36af02f3a57c20978bac0fe7909275c213632aeb391337de7cbf8585a66a7d011c892c521b69cd1d413b'
+      defaultZone: http://172.18.0.3:8761/eureka
     fetch-registry: true
     register-with-eureka: true
 
