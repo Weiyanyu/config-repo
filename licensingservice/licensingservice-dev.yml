@@ -10,6 +10,26 @@ spring:
     hibernate:
       ddl-auto: update
 
+  cloud:
+    stream:
+      bindings:
+        inboundOrgChange:
+          destination: orgChangeTopic
+          content-type: application/json
+          group: licensingGroup
+          binder: remote-rabbit
+      binders:
+        remote-rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 47.94.156.44
+                port: 5672
+                username: admin
+                password: 124563
+
+
 eureka:
   instance:
     preferIpAddress: true
@@ -19,4 +39,19 @@ eureka:
     service-url:
       defaultZone: '{cipher}233bd907c35a418801278bd2da2d76e1eb2483d50e9b147a576ee7c537e96017e449eb3b48dac16418855c32f91e2ef8'
 
+
+
+feign:
+  client:
+    config:
+      organizationservice:
+        requestInterceptors:
+          - top.yeonon.licensingservice.interceptor.UserContextInterceptor
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:2000/user
+
 name: dev-change-3
+
+
