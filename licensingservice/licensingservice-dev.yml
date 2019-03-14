@@ -24,12 +24,12 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: 47.94.156.44
+                host: 172.17.197.203
                 port: 5672
                 username: admin
                 password: 124563
   redis:
-    host: 47.94.156.44
+    host: 172.17.197.203
     port: 8090
 
 
