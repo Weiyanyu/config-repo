@@ -5,7 +5,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://172.18.0.4:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 spring:
   jpa:
     database: mysql
@@ -13,12 +13,12 @@ spring:
       ddl-auto: update
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: yeonon
+    username: root
     password: 124563
-    url: jdbc:mysql://172.17.197.203:3306/sca?useSSL=false
+    url: jdbc:mysql://localhost:3306/sca?useSSL=false
 
   cloud:
-    
+
     stream:
       bindings:
         output:
@@ -31,7 +31,7 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: 172.17.197.203
+                host: 47.94.156.44
                 port: 5672
                 username: admin
                 password: 124563    
@@ -39,5 +39,5 @@ spring:
 security:
   oauth2:
     resource:
-      user-info-uri: http://172.18.0.7:3000/user
-name: dev
+      user-info-uri: http://localhost:3000/user
+name: prod

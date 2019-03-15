@@ -2,7 +2,7 @@ spring:
   datasource:
     password: 124563
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/sca?useSSL=false
+    url: jdbc:mysql://172.17.197.203/sca?useSSL=false
     username: yeonon
   jpa:
     show-sql: true
@@ -28,6 +28,10 @@ spring:
                 port: 5672
                 username: admin
                 password: 124563
+  redis:
+    host: 172.17.197.203
+    port: 8090
+
 
 eureka:
   instance:
@@ -40,10 +44,6 @@ eureka:
 
 
 
-  redis:
-    host: 172.17.197.203
-    port: 8090
-
 feign:
   client:
     config:
@@ -53,6 +53,8 @@ feign:
 security:
   oauth2:
     resource:
-      user-info-uri: http://localhost:2000/user
+      user-info-uri: http://172.18.0.7:3000/user
 
-name: prod
+name: dev-change-3
+
+
