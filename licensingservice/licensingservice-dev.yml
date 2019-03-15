@@ -53,7 +53,7 @@ feign:
 security:
   oauth2:
     resource:
-      user-info-uri: http://localhost:2000/user
+      user-info-uri: http://172.18.0.7:2000/user
 
 name: dev-change-3
 
