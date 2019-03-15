@@ -15,7 +15,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: yeonon
     password: 124563
-    url: jdbc:mysql://localhost:3306/sca?useSSL=false
+    url: jdbc:mysql://172.17.197.203:3306/sca?useSSL=false
 
   cloud:
     
