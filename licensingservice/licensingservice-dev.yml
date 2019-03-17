@@ -9,6 +9,10 @@ spring:
     database: mysql
     hibernate:
       ddl-auto: update
+  
+  redis:
+    host: 47.94.156.44
+    port: 8090
 
   cloud:
     stream:
@@ -40,9 +44,6 @@ eureka:
 
 
 
-  redis:
-    host: 47.94.156.44
-    port: 8090
 
 feign:
   client:
