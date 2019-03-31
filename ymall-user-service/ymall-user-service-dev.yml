@@ -4,7 +4,10 @@ spring:
     url: '{cipher}c758dbe00237527237dac683c98a5ef544ed94e9a477ad7dafe9189ece01d1e326eaf1d147858cac0728c5ee1061a79742e7874a8de59b2e8a89620e138f692d'
     username: '{cipher}108f8de72ed0ba55d4b5da092a5c6580a3f4fe1c4e5d957b5e3d7f40a908f2aa'
     password: '{cipher}a71b3b36a8d4190f1c4f6f09159d77d252b0882c4355e766bbe31c2e2880b3b2'
-    
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none  
 eureka:
   instance:
     prefer-ip-address: true
